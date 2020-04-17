@@ -1,16 +1,24 @@
 <template>
-    <div>
-        <h1> {{  message }} </h1>
-    </div>
+  <div id="app">
+    <SideBar />
+    <Board />
+  </div>
 </template>
 
 <script>
+import SideBar from './components/SideBar.vue'
+import Board from './components/Board.vue'
+
 export default {
-    name: 'app',
-    data() {
-        return {
-            message: "Vue.js and asp.net core 3.1 integration setup"
-        }
-    }
+  name: 'App',
+  components: {
+    SideBar,
+    Board
+  }
 }
 </script>
+
+<style>
+#app {
+}
+</style>
